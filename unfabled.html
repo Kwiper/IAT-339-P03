@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale =1">
+        <title>Unfabled</title>
+        <link href="css/main.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div class="name">
+                <a href="index.html"><img src="img/logo_name.svg"></a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+
+        </nav>
+        
+        <section class="project-header">
+            <h1>Unfabled</h1>
+            <div class="project-description">
+                <img src="img/Unfabled/unfabled-thumbnail.png" alt="Project header image" class="header-image">
+                <h2>Game Jam Project</h2>
+                <div class="project-description-grid">
+                    <div>
+                        <h3 class="project-header">Team</h3>
+                        <ul class="project-list">
+                            <li>Herman Chan</li>
+                            <li>Adrien Pringle</li>
+                            <li>Taylor Liu</li>
+                            <li>Stratos Argentius</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Roles</h3>
+                        <ul class="project-list">
+                            <li>Gameplay Designer</li>
+                            <li>Programmer</li>
+                            <li>Sound Design</li>
+                            <li>Music</li>
+                            <li>UI Design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Tools</h3>
+                        <ul class="project-list">
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>FL Studio</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Timeline</h3>
+                        <ul class="project-list">
+                            <li>October 1 - October 4, 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-container">
+            <h2>Project Description</h2>
+            <p>Unfabled is a simple autoscrolling action game created for the Ludum Dare 49 game jam, centered around the theme of "Unstable." You play as a mad wizard on a rampage through a forest in an attempt to rescue his horse. Being our first Ludum Dare, therefore having a shorter amount of time to complete, we wanted to focus purely on what was important to the overall game experience.</p>
+
+        </section>
+
+        <section class="project-container">
+            <h2>Character Controller Process</h2>
+            <p>I wanted to create controls that would suit the fast-paced nature of our game. Because the design focused around choosing randomly generated elements to create spells in a short time span, I wanted the element selection process to be easily reactable. So, I designed the entire spell selection process around using one hand on the keyboard, using the WASD keys to select two elements. This allowed for people to quickly create a spell even if they couldn't see all the elements available in time, which lended itself to the unpredictability of the theme.</p>
+            <figure>
+            <img src="img/Unfabled/controls.PNG">
+            <figcaption>A screenshot of the controls UI that pops up in game, showing all the elements available to the player.</figcaption>
+            </figure>
+            <p>I also designed the spell selection system in a way that permitted us to expand the number of spells very easily if we wanted to, using a 2D array and looking up the values of that array to cast a spell. This would have made it easy to add extra rows and columns of spells had we had the time, and made the code much cleaner to work with.</p>
+            <figure>
+                <img src="img/Unfabled/chart.PNG">
+                <figcaption>A screenshot of the controls UI that pops up in game, showing all the elements available to the player.</figcaption>
+            </figure>
+        </section>
+
+        <section class="project-container">
+            <h2>Sound Design and Music Process</h2>
+            <p>For sound design, I used only recorded foley and synths for the sound design, as all of our assets had to be made by ourselves in order to get them rated. This proved to be a unique challenge, as making magic sounds from scratch was not something I had done before, but by layering sounds and using many effects, I managed to put together a library of unique sound effects for each spell. For the wizard's voice when he selects elements, I recorded my own voice, and added bitcrushing and pitch-shifting effects. For the music, I wanted to give a sense of adventure, so I created a fully orchestral piece taking inspiration from different fantasy games likeFinal FantasyandFire Emblem.It ended up making the entire game's premise and gameplay feel more grand, which was more than what I expected.</p>
+            <br>
+            <p>You can listen to the music here:</p>
+            <audio controls>
+            <source src="img/Unfabled/Unfabled.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio> 
+        </section>
+
+        <section class="project-container">
+            <h2>Takeaways</h2>
+            <p>Overall, I was very proud of the result of this jam. By honing in on just the bare essentials, we ended up making a very polished experience, and this led to us as a group being overall more communicative and efficient at our work. This paid off, as we landed in the top 15% of the jam, out of almost 3000 total entries.</p>
+        </section>
+
+        <section class="project-container">
+            <h2>Play Unfabled</h2>
+            <iframe frameborder="0" src="https://itch.io/embed/1219563" width="552" height="167"><a href="https://kwiper01.itch.io/unfabled">Unfabled by Kwiper, coelakan, chip2222, KybreX</a></iframe>
+        </section>
+
+        <footer>
+            <h3>My Links</h3>
+            <a href="https://github.com/kwiper"><img src="img/github-mark/github-mark-white.png" alt="Github Logo" height="50vh"></a> <!--Github mark from https://github.com/logos-->
+            <a href="https://www.linkedin.com/in/jlnnewman/"><img src="img/LI-In-Bug.png" alt="LinkedIn Logo" height="50vh"></a> <!--LInkedIn logo from https://brand.linkedin.com/downloads-->
+            <a href="https://kwiper01.itch.io"><img src="img/press-kit-2019.01.02/logos/itchio-logo-textless-white.png" alt="Itch.io Logo" height="50vh"></a> <!--Itch.io logo from https://itch.io/press-kit-->
+            <p>Email: jlnewman@sfu.ca</p>
+        </footer>
+    </body>
+
+</html>

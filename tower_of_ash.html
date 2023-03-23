@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale =1">
+        <title>Tower of Ash</title>
+        <link href="css/main.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div class="name">
+                <a href="index.html"><img src="img/logo_name.svg"></a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+
+        </nav>
+        
+        <section class="project-header">
+            <h1>Tower of Ash</h1>
+            <div class="project-description">
+                <img src="img/TowerOfAsh/tower_of_ash_header.png" alt="Project header image" class="header-image">
+                <h2>Game Design/Development Project</h2>
+                <div class="project-description-grid">
+                    <div>
+                        <h3 class="project-header">Team</h3>
+                        <ul class="project-list">
+                            <li>Herman Chan</li>
+                            <li>Nathan Cerone</li>
+                            <li>Matthew Armstrong</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Roles</h3>
+                        <ul class="project-list">
+                            <li>Project Lead</li>
+                            <li>Gameplay Designer</li>
+                            <li>Lead Developer</li>
+                            <li>Sound Designer</li>
+                            <li>Composer</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Tools</h3>
+                        <ul class="project-list">
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>Procreate</li>
+                            <li>FL Studio</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Timeline</h3>
+                        <ul class="project-list">
+                            <li>September 15 - December 13, 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-container">
+            <h2>Project Description</h2>
+            <p>Tower of Ash is a roguelite metroidvania created for IAT 410 - Advanced Game Design at Simon Fraser University.
+
+                In Tower of Ash, you take control of the Kindling, a being born from fire, with the goal of ascending the titular Tower of Ash in order to claim the Eternal Flame.
+                
+                This project took three months to conceptualize, develop, and complete, and as the director my goal was to create a game that built upon the knowledge gained developing past jam projects into a much larger scale game than I had previously worked on.</p>
+        </section>
+
+        <section class="project-container">
+            <h2>Concept</h2>
+            <p>The beginning of development started with the concept. I had the idea floating around in my head that I wanted to create a small metroidvania game, as I had become inspired by games in that genre lately. I had also become fond of roguelikes, so when I pitched my game idea to the team, I told them wanted to create a metroidvania game with roguelike elements. While there were other pitches, eventually that was the concept we landed on, and we began fleshing it out.</p>
+            <figure>
+            <img src="img/TowerOfAsh/pitch_image.png">
+            <figcaption>The original pitch that would become Tower of Ash</figcaption>
+            </figure>
+            <p>The concept was a time-sensitive interconnected world where the player would have to progress as far as they could before time ran out, after which they would use the resources they collected during their run in order to get stronger and progress through even more sections of the map the next time. The concept was built upon two pillars: exploration and learning through death.</p>
+            <br>
+            <pr>From there, we fleshed out the concept further, coming up with the player controls and abilities, enemies, and world, while also fleshing out the learning through death mechanic by linking the player's health with the timer. I designed most of the abilities to provide the player with additional movement utility, as they would be the main way to unlock new paths throughout the map. This movement utility would also aid the player with combat scenarios, giving them more opportunities to maneuver around enemies. The mastery of movement and combat simultaneously leading up to the boss fight was something I wanted to emphasize with the player's toolkit.</pr>
+            <figure>
+                <img src="img/TowerOfAsh/concept_sketch.png">
+                <figcaption>Concept sketches of the different player abilities.</figcaption>
+            </figure>
+            <p>We also went and developed the core loop of our game, to make sure any features we implemented did not stray from the main experience we wanted to give to players.</p>
+            <figure>
+                <img src="img/TowerOfAsh/core_loop.jpg">
+                <figcaption>Diagram showing the core gameplay loop of Tower of Ash.</figcaption>
+            </figure>          
+            <p>he world we came up with was a dark fantasy world, in a world where everything is created from fire and ash, inspired heavily by Dark Souls. From that concept, I began sketching out the player and the final boss in order to capture the artistic direction of our world.</p>
+            <figure>
+                <img src="img/TowerOfAsh/kindling.png">
+                <img src="img/TowerOfAsh/ashen_vessel.png">
+                <figcaption>Concept sketches of the player character and the final boss.</figcaption>
+            </figure>
+            <p>After designing the final boss, I also went and designed the final boss' moveset. Even though I knew I would not develop the boss until the foundation was implemented, I still designed the boss early so that the other team members could create enemies that followed it thematically and mechanically, as I wanted the enemies to be able to teach the player how to approach the boss fight.</p>
+            <figure>
+                <img src="img/TowerOfAsh/ashen_vessel_attacks.png">
+                <figcaption>Sketches showing some of the final boss' attacks and their effects.</figcaption>
+            </figure>
+            <p>All of this conceptual design work was fleshed out in a GDD so we could all go back and reference it and continue adding to it if we wanted to make any changes.</p>   
+        </section>
+
+        <section class="project-container">
+            <h2>Implementation</h2>
+            <p>The first thing I did when designing the gameplay systems for the player was to create a finite state machine diagram. This way, I knew how to make the gameplay states flow through each other, and I could reference it while I was developing. With this state machine chart, I could also apply it to enemy AI, albeit much simpler.</p>
+            <figure>
+                <img src="img/TowerOfAsh/state_machine_chart.png">
+                <figcaption>A diagram displaying the different state interactions on the player.</figcaption>
+            </figure>
+            <p>After that, I built out the logic for each state in individual classes and called the state switching logic from a central state machine class. Each individual state inherited from one main state so the logic would function all the same. Because of the amount of states the player would have, I didn't do all the finite state machine logic within a single script because then the code would have become a lot messier and harder to read, and it would have made it more difficult to add other states to the player if they were needed (they were.) These states were then linked to animations that would stop and play whenever states switched.</p>
+            <figure>
+                <img src="img/TowerOfAsh/animation_states.png">
+                <figcaption>Image showing all the player states connected to animations in Unity's animator.</figcaption>
+            </figure>
+            <p>For efficiency, I reused the state machine logic for enemies and the boss too, which made the process of creating enemies very simple. Some enemies also had very similar or identical logic, which let me reuse even more code. I designed the enemies and the boss to have very readable movesets, adjusting animations Herman gave me to have lots of anticipation time. It's a quick way to make combat scenarios readable and attacks have more impact while having limited time and resources.</p>
+            <figure>
+                <img src="img/TowerOfAsh/golem_windup.png">
+                <figcaption>Animation timeline for the Black Marble Golem enemy's slam attack, lasting almost 2 seconds long. Notice how not every frame has a sprite, I paused certain frames in both the windup and after the main action to highlight anticipation, which makes the attack feel more impactful.</figcaption>
+            </figure>
+            <p>More minor gameplay elements I worked on were the HUD, implementing the timer counting down and the resources the player has, as well as the upgrade system. I used Unity's scriptable objects to store player data and it was serialized in every scene so that data transfer between scenes was more simple so the upgrade system relied on updating the values in these scriptable objects.</p>
+            <figure>
+                <img src="img/TowerOfAsh/scriptable_object.png">
+                <figcaption>Image showing some of the player data that is stored in a scriptable object, including whether or not certain abilities are unlocked.</figcaption>
+            </figure>
+        </section>
+
+        <section class="project-container">
+            <h2>Takeaways</h2>
+            <p>Being the biggest project I'd done so far, I was pretty proud of the result. There were some technical issues, such as saving and loading, and level loading that weren't able to be patched out by the time of our deadline, and we had to cut corners in terms of assets and level design to make the deadline. If we had more time to work, and it wasn't for a class so we weren't burdened by the responsibilities of other classes, I'm sure we would have been able to produce a more polished experience. But, the core concept was received very positively, as a lot of the people who played our game were motivated to try to complete it, which I consider a success. This is one concept I would like to take further given more time.</p>
+        </section>
+
+        <section class="project-container">
+            <h2>Play Tower of Ash</h2>
+            <iframe frameborder="0" src="https://itch.io/embed/1827204" width="552" height="167"><a href="https://kwiper01.itch.io/tower-of-ash">Tower of Ash by Kwiper, ItalianCannolis, KybreX, DMSHiragi</a></iframe>
+        </section>
+        <footer>
+            <h3>My Links</h3>
+            <a href="https://github.com/kwiper"><img src="img/github-mark/github-mark-white.png" alt="Github Logo" height="50vh"></a> <!--Github mark from https://github.com/logos-->
+            <a href="https://www.linkedin.com/in/jlnnewman/"><img src="img/LI-In-Bug.png" alt="LinkedIn Logo" height="50vh"></a> <!--LInkedIn logo from https://brand.linkedin.com/downloads-->
+            <a href="https://kwiper01.itch.io"><img src="img/press-kit-2019.01.02/logos/itchio-logo-textless-white.png" alt="Itch.io Logo" height="50vh"></a> <!--Itch.io logo from https://itch.io/press-kit-->
+            <p>Email: jlnewman@sfu.ca</p>
+        </footer>
+    </body>
+
+</html>

@@ -295,3 +295,7 @@ figcaption{
     margin: auto;
     padding-bottom: 5rem;
 }
+
+.project-list li{
+    padding-right: 2.5rem;
+}
