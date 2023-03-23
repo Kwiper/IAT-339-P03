@@ -210,6 +210,7 @@ nav, .nav{
 .project-container{
     max-width: 960px;
     margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 .project-grid{
@@ -269,4 +270,35 @@ footer img, .footer img{
 
 .landing-text{
     text-align: center;
+}
+
+.project-description{
+    text-align: center;
+}
+
+.project-description-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    width: 100%;
+    margin: auto;
+    max-width: 980px;
+    text-align: center;
+}
+
+.project-list{
+    list-style: none;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.header-image, figure img{
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption{
+    font-family: 'Open-Sans', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
 }
