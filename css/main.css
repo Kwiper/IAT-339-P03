@@ -81,6 +81,7 @@ h4{
 
 p{
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
 }
 
 a, a:hover, a:active, a:focus{
@@ -92,26 +93,12 @@ a, a:hover, a:active, a:focus{
     color:red;
     position: relative;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.5s;
 }
 
-/*Text link hover effect from https://css-tricks.com/css-link-hover-effects/*/
-.text-link::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    border-radius: 4px;
-    background-color: red;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-}
-
-.text-link:hover::before{
-    transform-origin: left;
-    transform: scaleX(1);
+.text-link:hover, .text-link:focus, .text-link:active{
+    color:black;
 }
 
 .button-nav{
@@ -301,4 +288,10 @@ figcaption{
     font-family: 'Open-Sans', sans-serif;
     font-style: italic;
     font-weight: lighter;
+}
+
+.bio{
+    max-width: 960px;
+    margin: auto;
+    padding-bottom: 5rem;
 }
