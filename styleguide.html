@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Portfolio Style Guide</title>
+        <link href="css/main.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <body>
+        <header>
+            <h1>Portfolio Style Guide</h1>
+        </header>
+
+        <button class="accordion">Interactive Elements</button>
+        <div class="panel">
+
+            <section class="element">
+                <h2>In-Text Link</h2>
+
+                <h4>CSS Selector:</h4>
+                <p>.text-link</p>
+
+                <h4>Sample Code:</h4>
+                <code>&lt;a href="#" class="text-link"&gt;Text&lt;/a&gt;</code>
+
+                <h4>Rendered Element:</h4>
+                <p>This is a <a href="#" class="text-link">link</a> in text</p>
+
+            </section>
+
+            <section class="element">
+                <h2>Navigation link</h2>
+
+                <h4>CSS selector:</h4>
+                <p>.button-nav</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="button-nav"&gt;Default nav&lt;/a&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <a href="#" class="button-nav">DEFAULT NAV</a>
+            </section>
+
+            <section class="element">
+                <h2>Image as a link</h2>
+
+                <h4>CSS selector:</h4>
+                <p>.img-link</p>
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#"&gt;&lt;img src="img/pokemon_legends_arceus" alt="Test image" class="img-link"&gt;&lt;/a&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <!--Test image created by me-->
+                <a href="#"><img src="img/unfabled_thumbnail.png" alt="Test image" class="img-link"></a>
+            </section>
+        </div>
+
+        <button class="accordion">Text Elements</button>
+        <div class="panel">
+            <section class="element">
+                <h2>Headings</h2>
+
+                <h4>Sample code:</h4>
+                <code>
+                &lt;h1&gt;Header 1&lt;/h1&gt;<br>
+                &lt;h2&gt;Header 2&lt;/h2&gt;<br>
+                &lt;h3&gt;Header 3&lt;/h3&gt;<br>
+                &lt;h4&gt;Header 4&lt;/h4&gt;
+                </code>
+
+                <h4>Rendered element:</h4>
+                <h1>Header 1</h1>
+                <h2>Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+            </section>
+
+            <section class="element">
+                <h2>Paragraphs</h2>
+
+                <h4>Sample code:</h4>
+                <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+        </div>
+
+        <button class="accordion">Combined Elements</button>
+        <div class="panel">
+            
+        </div>
+
+        <button class="accordion">Iconography</button>
+        <div class="panel">
+            <section class="element">
+                <h2>Logo</h2>
+
+                <img src="img/logo_black.svg" alt="Portfolio Logo" width="25%"><br><br>
+                <img src="img/logo_name.svg" alt="Portfolio Logo with name" width="25%">
+            </section>
+
+            <section class="element">
+                <h2>Project Thumbnails</h2>
+                <img src="img/unfabled_thumbnail.png" alt="Thumbnail for Unfabled">
+            </section>
+        </div>
+
+        <button class="accordion">Citations</button>
+        <div class="panel">
+           
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </script>
+
+
+    </body>
+</html>
