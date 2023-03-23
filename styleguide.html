@@ -94,7 +94,74 @@
 
         <button class="accordion">Combined Elements</button>
         <div class="panel">
+            <section class="element">
+                <h2>Footer</h2>
+
+                <h4>Sample code:</h4>
+                <code>
+                    &lt;footer&gt;<br>                    
+                    &lt;h3&gt;My Linkslt;/h3&gt;<br>
+                    &lt;a href="#"&gt;&lt;img src="img/github-mark/github-mark-white.png" alt="Github Logo" height="50vh"&gt;&lt;/a&gt;<br> <!--Github mark from https://github.com/logos-->
+                    &lt;a href="#"&gt;&lt;img src="img/LI-In-Bug.png" alt="LinkedIn Logo" height="50vh"&gt;&lt;/a&gt;<br> <!--LInkedIn logo from https://brand.linkedin.com/downloads-->
+                    &lt;a href="#"&gt;&lt;img src="img/press-kit-2019.01.02/logos/itchio-logo-textless-white.png" alt="Itch.io Logo" height="50vh"&gt;&lt;/a&gt;<br> <!--Itch.io logo from https://itch.io/press-kit-->
+                    &lt;p&gt;Email: jlnewman@sfu.ca&lt;/p&gt;
+                    &lt;/footer&gt;</code>
+
+                <h4>Rendered element:</h4>
+                <div class="footer">
+                    <h3>My Links</h3>
+                    <a href="#"><img src="img/github-mark/github-mark-white.png" alt="Github Logo" height="50vh"></a> <!--Github mark from https://github.com/logos-->
+                    <a href="#"><img src="img/LI-In-Bug.png" alt="LinkedIn Logo" height="50vh"></a> <!--LInkedIn logo from https://brand.linkedin.com/downloads-->
+                    <a href="#"><img src="img/press-kit-2019.01.02/logos/itchio-logo-textless-white.png" alt="Itch.io Logo" height="50vh"></a> <!--Itch.io logo from https://itch.io/press-kit-->
+                    <p>Email: jlnewman@sfu.ca</p>
+                </div>
+                
+            </section>
+
+            <section class="element">
+                <h2>Navigation</h2>
+                
+                <h4>Sample code:</h4>
+                <code>
+                    &lt;nav&gt;<br>
+                        &lt;div class="name"&gt;<br>
+                            &lt;a href="index.html"&gt;&lt;img src="img/logo_name.svg"&gt;&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
             
+                        &lt;ul class="nav-menu"&gt;<br>
+                            &lt;li&gt;&lt;a href="#"&gt;PROJECTS&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;li&gt;&lt;a href="#"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                    </nav>
+                </code>
+                <h4>Rendered element:</h4>
+                <div class="nav">
+                    <div class="name">
+                        <a href="index.html"><img src="img/logo_name.svg"></a>
+                    </div>
+        
+                    <ul class="nav-menu">
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="element">
+                <h2>Project Listing</h2>
+
+                <h4>Rendered element:</h4>
+                    <div class="project-grid">
+                        <div class="project">
+                            <a href="#"><img src="img/unfabled_thumbnail.png" alt="Test image" class="img-link"></a>
+                            <div class="overlay">
+                                <div class="overlay-title"><h3>Project Title</h3></div>
+                                <div class="overlay-category"><h4>Project Category</h4></div>
+                                <div class="overlay-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
         </div>
 
         <button class="accordion">Iconography</button>
@@ -109,6 +176,13 @@
             <section class="element">
                 <h2>Project Thumbnails</h2>
                 <img src="img/unfabled_thumbnail.png" alt="Thumbnail for Unfabled">
+            </section>
+
+            <section class="element">
+                <h2>Company Logos</h2>
+                <img src="img/github-mark/github-mark.png" alt="Github Logo" height="50vh">
+                <img src="img/LI-In-Bug-black.png" alt="LinkedIn Logo" height="50vh">
+                <img src="img/press-kit-2019.01.02/logos/itchio-logo-textless-black.png" alt="Itch.io Logo" height="50vh">
             </section>
         </div>
 
