@@ -291,9 +291,17 @@ figcaption{
 }
 
 .bio{
-    max-width: 960px;
+    max-width: 1080px;
     margin: auto;
     padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bio-image{
+    max-width: 25%;
+    height: auto;
+    margin-right: 2rem;
 }
 
 .project-list li{
