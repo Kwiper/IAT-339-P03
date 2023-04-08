@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+@media only screen and (max-width:960px){
+    
+}
+
 /* Accordion from https://www.w3schools.com/howto/howto_js_accordion.asp*/
 .accordion {
     font-family: 'Montserrat', sans-serif;
@@ -69,6 +73,11 @@ h2{
     font-size: 2.5rem;
 }
 
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
 h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -101,6 +110,18 @@ a, a:hover, a:active, a:focus{
     color:black;
 }
 
+.text-link-footer{
+    color:white;
+    position: relative;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.text-link-footer:hover, .text-link-footer:focus, .text-link-footer:active{
+    color:red;
+}
+
 .button-nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -117,6 +138,7 @@ a, a:hover, a:active, a:focus{
     background-color: black;
     color:white;
 }
+
 
 .img-link{
     max-width:100%;
@@ -198,6 +220,55 @@ nav, .nav{
     max-width: 960px;
     margin: 0 auto;
     padding-bottom: 5rem;
+}
+
+@media only screen and (max-width:960px){
+    .project-container{
+        max-width: 480px;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .project-container{
+        max-width: 360px;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    h4{ 
+        font-size: 1.25rem;
+    }
+
+    p{
+        font-size:1rem;
+    }
+
+    .nav-menu a{
+        padding:1rem;
+    }
+
+    .bio{
+        max-width:360px;
+        margin: auto;
+        padding-bottom: 5rem;
+        display: grid;
+        flex-direction: column;
+    }
 }
 
 .project-grid{
@@ -306,4 +377,8 @@ figcaption{
 
 .project-list li{
     padding-right: 2.5rem;
+}
+
+iframe{
+    max-width: 100%;
 }
